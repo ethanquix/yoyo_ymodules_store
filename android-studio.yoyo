@@ -7,7 +7,7 @@ REQ debian, snap
 [INSTALL]
 
 - Linux
-CMD sudo snap install android-studio
+CMD sudo snap install android-studio --classic
 - END
 
 
