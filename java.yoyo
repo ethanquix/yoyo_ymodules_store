@@ -1,0 +1,15 @@
+NAME java
+AUTHOR Oracle
+INFO Java is a set of computer software and specifications developed by James Gosling at Sun Microsystems
+VERSION 3.2.1
+REQ debian
+
+[INSTALL]
+
+- Linux
+CMD sudo apt install openjdk-8-jre openjdk-8-jdk
+- END
+
+
+[VERIFY]
+DEFAULT

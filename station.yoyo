@@ -1,0 +1,25 @@
+NAME station
+AUTHOR Station
+INFO Station is the first smart workstation for busy people.
+VERSION 1.30
+REQ debian, curl
+
+[INSTALL]
+
+LET url https://dl.getstation.com/download/linux_64?filetype=AppImage
+LET name __browserX-1.30.0-x86_64.AppImage
+
+- Linux
+
+SAVEDIR
+
+DL #url #DLDIR #name
+CMD sh #DLDIR+#name
+
+RESTOREDIR
+
+- END
+
+
+[VERIFY]
+DEFAULT

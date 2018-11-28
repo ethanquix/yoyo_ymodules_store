@@ -1,0 +1,22 @@
+NAME react-native
+AUTHOR Facebook
+INFO A framework for building native apps with React.
+VERSION 0.57.5
+REQ debian, node, npm, android-studio
+
+[INSTALL]
+
+- Linux
+CMD sudo npm install -g react-native-cli
+
+PRINT YOu have to put these lines in your .bashrc
+PRINT export ANDROID_HOME=$HOME/Android/Sdk
+PRINT export PATH=$PATH:$ANDROID_HOME/tools
+PRINT export PATH=$PATH:$ANDROID_HOME/tools/bin
+PRINT export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+- END
+
+
+[VERIFY]
+DEFAULT

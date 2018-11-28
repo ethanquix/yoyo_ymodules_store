@@ -1,0 +1,15 @@
+NAME android-studio
+AUTHOR Google
+INFO Android Studio provides the fastest tools for building apps on every type of Android device.
+VERSION 3.2.1
+REQ debian, snap
+
+[INSTALL]
+
+- Linux
+CMD sudo snap install android-studio
+- END
+
+
+[VERIFY]
+DEFAULT
