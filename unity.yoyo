@@ -1,0 +1,21 @@
+NAME unity
+AUTHOR Unity
+INFO Unity game editor
+VERSION 2018.2
+REQ curl
+
+[INSTALL]
+
+LET url https://beta.unity3d.com/download/dad990bf2728/UnitySetup-2018.2.7f1
+LET name __UnitySetup-2018.2.7f1
+
+PRINT Installing at #DLDIR+#name
+
+DL #url #DLDIR #name
+CMD sh #DLDIR+#name
+
+CMD HIDE chmod +x #DLDIR+#name
+CMD HIDE sh #DLDIR+#name
+
+[VERIFY]
+CMD HIDE test -d ~/anaconda3

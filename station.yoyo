@@ -11,12 +11,8 @@ LET name __browserX-1.30.0-x86_64.AppImage
 
 - Linux
 
-SAVEDIR
-
 DL #url #DLDIR #name
 CMD sh #DLDIR+#name
-
-RESTOREDIR
 
 - END
 

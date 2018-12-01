@@ -2,14 +2,22 @@ NAME android-studio
 AUTHOR Google
 INFO Android Studio provides the fastest tools for building apps on every type of Android device.
 VERSION 3.2.1
-REQ debian, snap
+REQ debian, snap, java
 
 [INSTALL]
 
 - Linux
 CMD sudo snap install android-studio --classic
-- END
 
+PRINT You have to put these lines in your .bashrc
+PRINT export ANDROID_HOME=$HOME/Android/Sdk
+PRINT export PATH=$PATH:$ANDROID_HOME/tools
+PRINT export PATH=$PATH:$ANDROID_HOME/tools/bin
+PRINT export PATH=$PATH:$ANDROID_HOME/platform-tools
+PRINT \n
+PRINT Make sur /snap/bin is in your path
+
+- END
 
 [VERIFY]
 DEFAULT

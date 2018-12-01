@@ -9,12 +9,6 @@ REQ debian, node, npm, android-studio
 - Linux
 CMD sudo npm install -g react-native-cli
 
-PRINT YOu have to put these lines in your .bashrc
-PRINT export ANDROID_HOME=$HOME/Android/Sdk
-PRINT export PATH=$PATH:$ANDROID_HOME/tools
-PRINT export PATH=$PATH:$ANDROID_HOME/tools/bin
-PRINT export PATH=$PATH:$ANDROID_HOME/platform-tools
-
 - END
 
 
