@@ -15,6 +15,7 @@ LET execnameslash /Postman
 
 DL #url #DLDIR #name
 CMD HIDE tar -xvf #DLDIR+#name -C #EXTRACTDIR
+CMD NOCHECK mkdir #INSTALLDIR+#install
 CMD cp -r #EXTRACTDIR+#output #INSTALLDIR+#install
 CMD cp #INSTALLDIR+#install+#execnameslash #INSTALLDIR+#execname
 
