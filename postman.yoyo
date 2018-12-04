@@ -1,0 +1,20 @@
+NAME postman
+AUTHOR postman
+INFO Postman Makes API Development Simple.
+VERSION 1
+REQ debian, curl
+
+[INSTALL]
+
+LET url https://dl.pstmn.io/download/latest/linux64
+LET name __postman_latest.tar.gz
+LET install /postmandir
+LET execname Postman
+
+DL #url #DLDIR #name
+CMD HIDE tar -xvf #DLDIR+#name
+CMD cp -r Postman #INSTALLDIR+#install
+CMD cp #INSTALL+#install+#execname #INSTALL+#execname
+
+[VERIFY]
+DEFAULT
