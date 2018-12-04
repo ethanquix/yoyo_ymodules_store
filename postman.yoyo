@@ -8,14 +8,15 @@ REQ debian, curl
 
 LET url https://dl.pstmn.io/download/latest/linux64
 LET name __postman_latest.tar.gz
-LET install postmandir/
+LET install postmandir
 LET output Postman/*
 LET execname Postman
+LET execnameslash /Postman
 
 DL #url #DLDIR #name
 CMD HIDE tar -xvf #DLDIR+#name -C #EXTRACTDIR
-CMD cp -r #EXTRACTDIR+#output #INSTALLDIR
-CMD cp #INSTALLDIR+#install+#execname #INSTALLDIR+#execname
+CMD cp -r #EXTRACTDIR+#output #INSTALLDIR+#install
+CMD cp #INSTALLDIR+#install+#execnameslash #INSTALLDIR+#execname
 
 [VERIFY]
 DEFAULT
