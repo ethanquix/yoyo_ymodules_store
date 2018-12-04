@@ -14,7 +14,7 @@ LET execname Postman
 DL #url #DLDIR #name
 CMD HIDE tar -xvf #DLDIR+#name
 CMD cp -r Postman #INSTALLDIR+#install
-CMD cp #INSTALLDIR+#install+#execname #INSTALL+#execname
+CMD cp #INSTALLDIR+#install+#execname #INSTALLDIR+#execname
 
 [VERIFY]
 DEFAULT
