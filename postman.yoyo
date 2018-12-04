@@ -11,13 +11,12 @@ LET name __postman_latest.tar.gz
 LET install postmandir
 LET output Postman/*
 LET execname Postman
-LET execnameslash /Postman
 
 DL #url #DLDIR #name
 CMD HIDE tar -xvf #DLDIR+#name -C #EXTRACTDIR
 CMD NOCHECK mkdir #INSTALLDIR+#install
 CMD cp -r #EXTRACTDIR+#output #INSTALLDIR+#install
-CMD cp #INSTALLDIR+#install+#execnameslash #INSTALLDIR+#execname
+CMD ln -s #INSTALLDIR+postmandir/Postman #INSTALLDIR+Postman
 
 [VERIFY]
 DEFAULT
